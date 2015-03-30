@@ -33,12 +33,11 @@ namespace MonteCarloCards
         /// <summary>
         /// Runs one card-collecting simulation.  
         /// </summary>
-        /// <param name="numberOfPossibleCards">Number of cards to collect as inptu by user</param>
+        /// <param name="numberOfPossibleCards">Number of cards to collect as input by user</param>
         /// <returns>Number of boxes purchased</returns>
         private int RunSimulation(int numberOfPossibleCards)
         {
             int numberOfBoxes = 0; //Number of boxes "bought"
-            Random rand; //Random number generator
             List<int> cards = new List<int>(); //Holds aquired cards for comparison
 
             //Loop until all "cards" are found
@@ -109,7 +108,7 @@ namespace MonteCarloCards
         }
 
         /// <summary>
-        /// The following method was taken directly from scottlilly.com (http://scottlilly.com/create-better-random-numbers-in-c/)
+        /// The following method was derived from information onscottlilly.com (http://scottlilly.com/create-better-random-numbers-in-c/)
         /// This is an improved random number generator, since C#'s native random number generator is not very... random.
         /// </summary>
         /// <param name="minimumValue"></param>
