@@ -4,11 +4,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MonteCarloCards
+namespace MonteCarloCards.Models
 {
     public class ResultHolderModel
     {
-        public int NumberOfBoxes; // Number of boxes purchased
-        public long Counter; //How many times this result occurred
+        private int _numberOfBoxes; // Number of boxes purchased
+        private long _counter; //How many times this result occurred
+
+        public int NumberOfBoxes
+        {
+            get {return _numberOfBoxes; }
+            set
+            {
+                if (_numberOfBoxes == value) return;
+                else
+                {
+                    _numberOfBoxes = value;
+                }
+            }
+        }
+
+        public long Counter
+        {
+            get { return _counter; }
+            set
+            {
+                if (_counter == value) return;
+                else
+                {
+                    _counter = value;
+                }
+            }
+        }
     }
 }

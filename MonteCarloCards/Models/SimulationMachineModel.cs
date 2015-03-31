@@ -11,7 +11,7 @@ namespace MonteCarloCards.Models
         /// <summary>
         /// Runs one card-collecting simulation.  
         /// </summary>
-        /// <param name="numberOfPossibleCards">Number of cards to collect as inptu by user</param>
+        /// <param name="numberOfPossibleCards">Number of cards to collect as input by user</param>
         /// <returns>Number of boxes purchased</returns>
         public int RunSimulation(int numberOfPossibleCards)
         {
